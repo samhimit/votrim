@@ -26,8 +26,8 @@ def CutAudioFile(pathName,destination):
     # Split track where the silence is 2 seconds or more
     chunks = split_on_silence (
         track, 
-        min_silence_len = 1750,
-        silence_thresh = -52
+        min_silence_len = 2000,
+        silence_thresh = -58
     )
     # Process each chunk with your parameters
     for i, chunk in enumerate(chunks):
